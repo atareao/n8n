@@ -15,7 +15,7 @@ services:
       - ./init-data.sh:/docker-entrypoint-initdb.d/init-data.sh
 
   n8n:
-    image: n8nio/n8n
+    image: atareao/n8n:raspbian
     restart: always
     environment:
       - DB_TYPE=postgresdb
